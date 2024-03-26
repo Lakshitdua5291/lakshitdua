@@ -1,147 +1,185 @@
 /* Font */
 html {
-    font: 20px Arial, sans-serif;
-  }
-  
-  h1, h2 {
-    font-variant: small-caps;
-  }
-  
-  figcaption {
-    font-weight: bold;
-    font-variant: small-caps;
-    font-size: 1.2rem; /* Relative to the root element */
-  }
-  
-  q {
-    font-style: italic;
-    font-family: cursive;
-    font-size: 1.2rem; /* Relative to the root element */
-  }
-  
-  footer p {
-    font-size: 0.8rem; /* Relative to the root element */
-  }
-  
-  /* Height, Width & Max Width */
-  body {
-    width: 80%; /* Relative to its parent */
-    max-width: 1200px; /* Absolute unit */
-  }
-  
-  .image {
-    width: 50%; /* Relative to its parent */
-    height: auto; /* Automatically adjust height */
-  }
-  
-  .figure {
-    width: 50%; /* Relative to its parent */
-    height: auto; /* Automatically adjust height */
-  }
-  
-  iframe, video {
-    width: 100%; /* Relative to its parent */
-  }
-  
-  /* Box Model & Alignment */
-  body {
-    padding: 1rem; /* Padding on all sides */
-    margin: 0 auto; /* Center align */
-    background-color: #8ed4ee;
-  }
-  
-  header, footer {
-    text-align: center; /* Center align text */
-  }
-  
-  .main-section {
-    text-align: center; /* Center align text */
-    padding: 1rem; /* Padding on all sides */
-  }
-  .main-section-figure img {
-    border-radius: 10px; /* Rounded corners with a radius of 10 pixels */
+  font: 16px Arial, sans-serif; /* Decrease html font */
 }
 
-  #bio {
-    text-align: left; /* Align text to the left */
-  }
-  
-  .image {
-    padding: 1rem; /* Padding on all sides */
-  }
-  
-  .figure {
-    padding: 1rem; /* Padding on all sides */
-    margin: 1rem 0; /* Margin on top and bottom */
-    text-align: center; /* Center align */
-  }
-  
-  #quote q {
-    padding: 1rem; /* Padding on all sides */
-  }
-  
-  iframe, video {
-    padding: 1rem; /* Padding on all sides */
-  }
-  
-  /* Borders & Box Shadow */
-  header, footer {
-    border: 1px solid #000; /* Border with 6-digit hex color */
-  }
-  
-  .image {
-    border-radius: 10px; /* Rounded corners */
-  }
-  
-  #relative-path-image {
-    border:  /* Border with RGB color */
-    border-radius: 10px; /* Rounded corners */
-  }
-  
-  #absolute-path-image {
-    border: ; /* Border with RGB color */
-    border-radius: 10px; /* Rounded corners */
-  }
-  main-section {
-    background-color: hsla(210, 50%, 80%, 0.8);
-  }
-  
-  iframe, video {
-    border: 1px solid rgb(0, 0, 255); /* Border with RGB color */
-    border-radius: 10px; /* Rounded corners */
-  }
-  
-  #quote q {
-    border: 1px solid #f00; /* Border with 3-digit hex color */
-    box-shadow: 5px 5px 5px #f00; /* 3 side box shadow */
-  }
-  
-  /* Colour */
-  #relative-path-image figcaption {
-    color: #0000ff; /* Font color with 6-digit hex color */
-  }
-  
-  #absolute-path-image figcaption {
-    color: #0000ff; /* Font color with 6-digit hex color */
-  }
-  
-  h1, h2 {
-    color: #0000ff; /* Font color with named color */
-  }
-  
-  header, footer {
-    background: linear-gradient(to right, #ff0000, #0000ff); /* Gradient background with RGB colors */
-  }
-  
-  .main-section {
-    background-color: hsla(120, 100%, 50%, 0.5); /* Background color with HSLA color */
-  }
-  
-  #relative-path-image {
-    background-color:hsla(321, 100%, 50%, );  /* Background color with HSLA color */
-  }
-  
-  #absolute-path-image {
-    background-color:hsla(120, 100%, 50%, );  /* Background color with HSLA color */
-  }
-  
+h1, h2 {
+  font-variant: small-caps;
+  color: #0000ff; /* Font color with named color */
+}
+
+figcaption {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.2rem; /* Relative to the root element */
+  color: #0000ff; /* Font color with 6-digit hex color */
+}
+
+q {
+  font-style: italic;
+  font-family: cursive;
+  font-size: 1.2rem; /* Relative to the root element */
+}
+
+footer p {
+  font-size: 0.8rem; /* Relative to the root element */
+}
+
+/* Height, Width & Max Width */
+body {
+  width: 80%; /* Relative to its parent */
+  max-width: 1200px; /* Absolute unit */
+  padding: 1rem; /* Padding on all sides */
+  margin: 0 auto; /* Center align */
+  background-color: #8ed4ee;
+}
+
+.image, .figure {
+  width: 50%; /* Relative to its parent */
+  height: auto; /* Automatically adjust height */
+  padding: 1rem; /* Padding on all sides */
+  margin: 1rem auto; /* Margin on top and bottom */
+}
+
+iframe, video {
+  width: 100%; /* Relative to its parent */
+  padding: 1rem; /* Padding on all sides */
+}
+
+/* Box Model & Alignment */
+header, footer {
+  text-align: center; /* Center align text */
+  border: 1px solid #000; /* Border with 6-digit hex color */
+}
+
+main {
+  float: left; /* Float to the left */
+  width: 70%; /* 70% width */
+}
+
+aside {
+  float: right; /* Float to the right */
+  width: 30%; /* 30% width */
+  clear: right; /* Clear the float */
+}
+
+#bio {
+  text-align: left; /* Align text to the left */
+}
+
+.main-section {
+  text-align: center; /* Center align text */
+  padding: 1rem; /* Padding on all sides */
+  background-color: hsla(210, 50%, 80%, 0.8);
+}
+
+#relative-path-image {
+  background-color: /* Background color with HSLA color */
+}
+
+#absolute-path-image {
+  background-color: /* Background color with HSLA color */
+}
+
+/* Borders & Box Shadow */
+.image {
+  border-radius: 10px; /* Rounded corners */
+}
+
+#relative-path-image {
+  border: 1px solid rgb(0, 0, 255); /* Border with RGB color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#absolute-path-image {
+  border: 1px solid rgb(0, 0, 255); /* Border with RGB color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+iframe, video {
+  border: 1px solid rgb(0, 0, 255); /* Border with RGB color */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#quote q {
+  border: 1px solid #f00; /* Border with 3-digit hex color */
+  box-shadow: 5px 5px 5px #f00; /* 3 side box shadow */
+}
+
+/* Colour */
+nav ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none; /* Remove text decoration */
+  display: inline-block; /* Display as block */
+  width: 45%; /* Set width */
+  background-color: #0000ff; /* Set background color */
+  color: #ffffff; /* Set font color */
+  text-align: center; /* Center align text */
+  padding: 10px; /* Padding */
+  margin: 5px; /* Margin */
+}
+
+nav a:hover {
+  background-color: #ffffff; /* Reverse background color */
+  color: #0000ff; /* Reverse font color */
+}
+
+aside h3 {
+  font-variant: small-caps;
+  color: #0000ff; /* Font color with named color */
+  text-align: center; /* Center align text */
+}
+
+aside table {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full width */
+}
+
+aside th, aside td {
+  border: 1px solid #000; /* Border with 6-digit hex color */
+  font-weight: bold;
+  font-style: italic;
+  font-variant: small-caps;
+  color: #0000ff; /* Font color with named color */
+  text-align: center; /* Center align text */
+}
+
+aside td {
+  color: #000; /* Font color */
+}
+
+aside ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0;
+}
+
+aside ul li {
+  text-decoration: none; /* Remove text decoration */
+  color: #0000ff; /* Font color with named color */
+  line-height: 2; /* Increase line-height */
+}
+
+aside ul li:hover {
+  color: #ff0000; /* Change font color when hovering */
+}
+
+/* Footer */
+footer {
+  clear: both; /* Clear floats */
+  width: 100%;
+  background-color: #000000; /* Background color */
+  color: #ffffff; /* Font color */
+  text-align: center;
+  padding: 10px 0; /* Padding */
+  border-top: 1px solid #ffffff; /* Top border */
+}
+
+/* Main Content */
+main {
+  overflow: auto; /* Add overflow property to enable scrolling if content exceeds viewport */
+}
+
